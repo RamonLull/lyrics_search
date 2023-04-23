@@ -8,6 +8,7 @@ word, artist, search_result = None, None, None
 
 @app.route('/')
 def index():
+    return "welcome"
     return render_template('index.html')
 
 
