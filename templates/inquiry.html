@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lyrics Search</title>
+</head>
+<body>
+    <h1>Lyrics Search</h1>
+    <form action="{{ url_for("check_artist_name") }}" method="POST">
+        <p>Aradığınız artist adı  {{ artist_name }} mı?.</p>
+        <input type="submit" name="submit_button" value="Evet">
+        <input type="submit" name="submit_button" value="Hayır">
+    </form>
+</body>
+</html>
