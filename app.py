@@ -46,7 +46,6 @@ def get_lyrics():
 
     # search for the artist
     search_result = genius.search_artist(artist, max_songs=1)
-    search_result.save_lyrics()
     return render_template('inquiry.html', artist_name=search_result.name)
 
 
